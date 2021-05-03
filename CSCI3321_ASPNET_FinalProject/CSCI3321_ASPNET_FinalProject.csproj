@@ -107,6 +107,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AddBook.aspx" />
+    <Content Include="AddPublishers.aspx" />
     <Content Include="App_Data\BookCollection.mdf" />
     <Content Include="App_Data\BookCollection_log.ldf">
       <DependentUpon>BookCollection.mdf</DependentUpon>
@@ -172,6 +173,13 @@
     </Compile>
     <Compile Include="AddBook.aspx.designer.cs">
       <DependentUpon>AddBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddPublishers.aspx.cs">
+      <DependentUpon>AddPublishers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddPublishers.aspx.designer.cs">
+      <DependentUpon>AddPublishers.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">

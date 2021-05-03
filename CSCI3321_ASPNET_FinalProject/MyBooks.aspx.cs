@@ -28,7 +28,7 @@ namespace CSCI3321_ASPNET_FinalProject
             // 2. Create a SqlCommand object using the above connection object
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
-            cmd.CommandText = "Your SQL statements go there";
+            cmd.CommandText = "";
 
             // 3. Open the connection and execute the command
             // store the returned data in a SqlDataReader object
@@ -40,8 +40,11 @@ namespace CSCI3321_ASPNET_FinalProject
             if (reader.HasRows)
             {
                 // Build the table 
+
             }
 
         }
     }
 }
+    
+   
