@@ -24,9 +24,9 @@ namespace CSCI3321_ASPNET_FinalProject
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
             
-            //INSERT INTO Books VALUE(BookID should be auto, Title, AuthorID, Price, PublishDate, PublisherID, GenreID, WordCount?)
-            cmd.CommandText = "INSERT INTO Books VALUE('" + txtTitle.Text + "', '" + sdsAuthor.SelectedValue + "'," + txtPrice.Text + ", '" +
-                txtPublishDate.Text + "', " + sdsPublisher.SelectedValue + ", " + sdsGenre.SelectedValue + ",)";
+            //INSERT INTO Books VALUE(BookID should be auto, Title, AuthorID, Price, PublishDate, PublisherID, GenreID, WordCount can be null)
+            cmd.CommandText = "INSERT INTO Books VALUE ('" + txtTitle.Text + "', " + sdsAuthor.SelectedValue + ", " + txtPrice.Text + ", '" +
+                txtPublishDate.Text + "', " + sdsPublisher.SelectedValue + ", " + sdsGenre.SelectedValue + ")";
 
             conn.Open();
             cmd.ExecuteNonQuery();
